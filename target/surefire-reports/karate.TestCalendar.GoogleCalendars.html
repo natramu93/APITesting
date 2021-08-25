@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>karate.TestCalendar.GoogleCalendars</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-08-23 11:37:08 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:3]">[1:3] Create a calendar and Event, Update Event and Delete Event and Calendar </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">karate/TestCalendar/GoogleCalendars.feature</span><span class="feature-description">Validate Google Calendars API</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:3]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">Create a calendar and Event, Update Event and Delete Event and Calendar </span>
+</div>
+<div class="scenario-time passed">ms: 10629</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">Given url "https://www.googleapis.com/calendar/v3/calendars"</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="preformatted" data-parent="1">11:36:57.877 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">And header Authorization = "Bearer ya29.a0ARrdaM9ZJvgArYfTzpgNdltsIfAPotWfsEpTYT3HiWV64hnbfWZdF77Efv7-ufPGOgHVTmNb4_BW19Y312yUTRVlUG9qId7UH81lykn63f75SV5VwNgvj4CAo5Ifr_1_EI_Fmn_re-XvquIj3AxH0BOPu7rX"</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">And request {'summary':'Karate Calendar'}</div>
+</div>
+<div class="time-cell passed">67</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">6488</div>
+</div>
+<div class="preformatted" data-parent="4">11:36:58.523 request:
+1 &gt; POST https://www.googleapis.com/calendar/v3/calendars
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer ya29.a0ARrdaM9ZJvgArYfTzpgNdltsIfAPotWfsEpTYT3HiWV64hnbfWZdF77Efv7-ufPGOgHVTmNb4_BW19Y312yUTRVlUG9qId7UH81lykn63f75SV5VwNgvj4CAo5Ifr_1_EI_Fmn_re-XvquIj3AxH0BOPu7rX
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 29
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: www.googleapis.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_292)
+{"summary":"Karate Calendar"}
+
+11:37:04.462 response time in milliseconds: 5937.13
+1 &lt; 200
+1 &lt; Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Content-Length: 282
+1 &lt; Content-Type: application/json; charset=UTF-8
+1 &lt; Date: Mon, 23 Aug 2021 06:07:04 GMT
+1 &lt; ETag: "8bgD42t56rNmSZhJQgVbNHfqnWg"
+1 &lt; Expires: Mon, 01 Jan 1990 00:00:00 GMT
+1 &lt; Pragma: no-cache
+1 &lt; Server: ESF
+1 &lt; Vary: [Origin, X-Origin, Referer]
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 0
+{
+ "kind": "calendar#calendar",
+ "etag": "\"8bgD42t56rNmSZhJQgVbNHfqnWg\"",
+ "id": "rcd1hjl1llngso4k2qehkganls@group.calendar.google.com",
+ "summary": "Karate Calendar",
+ "timeZone": "UTC",
+ "conferenceProperties": {
+  "allowedConferenceSolutionTypes": [
+   "hangoutsMeet"
+  ]
+ }
+}</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">Then def cid = response.id</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">Given path cid+'/events'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">And header Authorization = "Bearer ya29.a0ARrdaM9ZJvgArYfTzpgNdltsIfAPotWfsEpTYT3HiWV64hnbfWZdF77Efv7-ufPGOgHVTmNb4_BW19Y312yUTRVlUG9qId7UH81lykn63f75SV5VwNgvj4CAo5Ifr_1_EI_Fmn_re-XvquIj3AxH0BOPu7rX"</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">And request {'end':{'date':'2021-09-10'},'start':{'date':'2021-08-25'}}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">797</div>
+</div>
+<div class="preformatted" data-parent="10">11:37:04.477 request:
+2 &gt; POST https://www.googleapis.com/calendar/v3/calendars/rcd1hjl1llngso4k2qehkganls@group.calendar.google.com/events
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Authorization: Bearer ya29.a0ARrdaM9ZJvgArYfTzpgNdltsIfAPotWfsEpTYT3HiWV64hnbfWZdF77Efv7-ufPGOgHVTmNb4_BW19Y312yUTRVlUG9qId7UH81lykn63f75SV5VwNgvj4CAo5Ifr_1_EI_Fmn_re-XvquIj3AxH0BOPu7rX
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Length: 59
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Host: www.googleapis.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_292)
+{"end":{"date":"2021-09-10"},"start":{"date":"2021-08-25"}}
+
+11:37:05.272 response time in milliseconds: 794.39
+2 &lt; 200
+2 &lt; Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Content-Length: 751
+2 &lt; Content-Type: application/json; charset=UTF-8
+2 &lt; Date: Mon, 23 Aug 2021 06:07:05 GMT
+2 &lt; ETag: "3259397650052000"
+2 &lt; Expires: Mon, 01 Jan 1990 00:00:00 GMT
+2 &lt; Pragma: no-cache
+2 &lt; Server: ESF
+2 &lt; Vary: [Origin, X-Origin, Referer]
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-XSS-Protection: 0
+{
+ "kind": "calendar#event",
+ "etag": "\"3259397650052000\"",
+ "id": "dr0vep185kgple4fur3fgje3bk",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=ZHIwdmVwMTg1a2dwbGU0ZnVyM2ZnamUzYmsgcmNkMWhqbDFsbG5nc280azJxZWhrZ2FubHNAZw",
+ "created": "2021-08-23T06:07:05.000Z",
+ "updated": "2021-08-23T06:07:05.026Z",
+ "creator": {
+  "email": "natarajan.ramanathan93@gmail.com"
+ },
+ "organizer": {
+  "email": "rcd1hjl1llngso4k2qehkganls@group.calendar.google.com",
+  "displayName": "Karate Calendar",
+  "self": true
+ },
+ "start": {
+  "date": "2021-08-25"
+ },
+ "end": {
+  "date": "2021-09-10"
+ },
+ "iCalUID": "dr0vep185kgple4fur3fgje3bk@google.com",
+ "sequence": 0,
+ "reminders": {
+  "useDefault": false
+ },
+ "eventType": "default"
+}</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">Then def eid = response.id</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">Given path cid+'/events/'+eid</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">And header Authorization = "Bearer ya29.a0ARrdaM9ZJvgArYfTzpgNdltsIfAPotWfsEpTYT3HiWV64hnbfWZdF77Efv7-ufPGOgHVTmNb4_BW19Y312yUTRVlUG9qId7UH81lykn63f75SV5VwNgvj4CAo5Ifr_1_EI_Fmn_re-XvquIj3AxH0BOPu7rX"</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">And request {'summary':'Updated Event Name'}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">When method patch</div>
+</div>
+<div class="time-cell passed">978</div>
+</div>
+<div class="preformatted" data-parent="16">11:37:05.280 request:
+3 &gt; PATCH https://www.googleapis.com/calendar/v3/calendars/rcd1hjl1llngso4k2qehkganls@group.calendar.google.com/events/dr0vep185kgple4fur3fgje3bk
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Authorization: Bearer ya29.a0ARrdaM9ZJvgArYfTzpgNdltsIfAPotWfsEpTYT3HiWV64hnbfWZdF77Efv7-ufPGOgHVTmNb4_BW19Y312yUTRVlUG9qId7UH81lykn63f75SV5VwNgvj4CAo5Ifr_1_EI_Fmn_re-XvquIj3AxH0BOPu7rX
+3 &gt; Connection: Keep-Alive
+3 &gt; Content-Length: 32
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Host: www.googleapis.com
+3 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_292)
+{"summary":"Updated Event Name"}
+
+11:37:06.255 response time in milliseconds: 973.95
+3 &lt; 200
+3 &lt; Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Content-Length: 785
+3 &lt; Content-Type: application/json; charset=UTF-8
+3 &lt; Date: Mon, 23 Aug 2021 06:07:06 GMT
+3 &lt; ETag: "3259397652030000"
+3 &lt; Expires: Mon, 01 Jan 1990 00:00:00 GMT
+3 &lt; Pragma: no-cache
+3 &lt; Server: ESF
+3 &lt; Vary: Origin,X-Origin,Referer
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-Frame-Options: SAMEORIGIN
+3 &lt; X-XSS-Protection: 0
+{
+ "kind": "calendar#event",
+ "etag": "\"3259397652030000\"",
+ "id": "dr0vep185kgple4fur3fgje3bk",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=ZHIwdmVwMTg1a2dwbGU0ZnVyM2ZnamUzYmsgcmNkMWhqbDFsbG5nc280azJxZWhrZ2FubHNAZw",
+ "created": "2021-08-23T06:07:05.000Z",
+ "updated": "2021-08-23T06:07:06.041Z",
+ "summary": "Updated Event Name",
+ "creator": {
+  "email": "natarajan.ramanathan93@gmail.com"
+ },
+ "organizer": {
+  "email": "rcd1hjl1llngso4k2qehkganls@group.calendar.google.com",
+  "displayName": "Karate Calendar",
+  "self": true
+ },
+ "start": {
+  "date": "2021-08-25"
+ },
+ "end": {
+  "date": "2021-09-10"
+ },
+ "iCalUID": "dr0vep185kgple4fur3fgje3bk@google.com",
+ "sequence": 0,
+ "reminders": {
+  "useDefault": false
+ },
+ "eventType": "default"
+}</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">Given path cid+'/events/'+eid</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">And header Authorization = "Bearer ya29.a0ARrdaM9ZJvgArYfTzpgNdltsIfAPotWfsEpTYT3HiWV64hnbfWZdF77Efv7-ufPGOgHVTmNb4_BW19Y312yUTRVlUG9qId7UH81lykn63f75SV5VwNgvj4CAo5Ifr_1_EI_Fmn_re-XvquIj3AxH0BOPu7rX"</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">When method delete</div>
+</div>
+<div class="time-cell passed">734</div>
+</div>
+<div class="preformatted" data-parent="20">11:37:06.258 request:
+4 &gt; DELETE https://www.googleapis.com/calendar/v3/calendars/rcd1hjl1llngso4k2qehkganls@group.calendar.google.com/events/dr0vep185kgple4fur3fgje3bk
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Authorization: Bearer ya29.a0ARrdaM9ZJvgArYfTzpgNdltsIfAPotWfsEpTYT3HiWV64hnbfWZdF77Efv7-ufPGOgHVTmNb4_BW19Y312yUTRVlUG9qId7UH81lykn63f75SV5VwNgvj4CAo5Ifr_1_EI_Fmn_re-XvquIj3AxH0BOPu7rX
+4 &gt; Connection: Keep-Alive
+4 &gt; Host: www.googleapis.com
+4 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_292)
+
+11:37:06.990 response time in milliseconds: 731.18
+4 &lt; 204
+4 &lt; Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 &lt; Content-Length: 0
+4 &lt; Content-Type: text/html
+4 &lt; Date: Mon, 23 Aug 2021 06:07:06 GMT
+4 &lt; Expires: Mon, 01 Jan 1990 00:00:00 GMT
+4 &lt; Pragma: no-cache
+4 &lt; Server: ESF
+4 &lt; Vary: [Origin, X-Origin, Referer]
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-Frame-Options: SAMEORIGIN
+4 &lt; X-XSS-Protection: 0</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">Then status 204</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">Given path cid</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">And header Authorization = "Bearer ya29.a0ARrdaM9ZJvgArYfTzpgNdltsIfAPotWfsEpTYT3HiWV64hnbfWZdF77Efv7-ufPGOgHVTmNb4_BW19Y312yUTRVlUG9qId7UH81lykn63f75SV5VwNgvj4CAo5Ifr_1_EI_Fmn_re-XvquIj3AxH0BOPu7rX"</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">When method delete</div>
+</div>
+<div class="time-cell passed">1536</div>
+</div>
+<div class="preformatted" data-parent="24">11:37:06.993 request:
+5 &gt; DELETE https://www.googleapis.com/calendar/v3/calendars/rcd1hjl1llngso4k2qehkganls@group.calendar.google.com
+5 &gt; Accept-Encoding: gzip,deflate
+5 &gt; Authorization: Bearer ya29.a0ARrdaM9ZJvgArYfTzpgNdltsIfAPotWfsEpTYT3HiWV64hnbfWZdF77Efv7-ufPGOgHVTmNb4_BW19Y312yUTRVlUG9qId7UH81lykn63f75SV5VwNgvj4CAo5Ifr_1_EI_Fmn_re-XvquIj3AxH0BOPu7rX
+5 &gt; Connection: Keep-Alive
+5 &gt; Host: www.googleapis.com
+5 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_292)
+
+11:37:08.528 response time in milliseconds: 1534.05
+5 &lt; 204
+5 &lt; Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+5 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+5 &lt; Content-Length: 0
+5 &lt; Content-Type: text/html
+5 &lt; Date: Mon, 23 Aug 2021 06:07:08 GMT
+5 &lt; Expires: Mon, 01 Jan 1990 00:00:00 GMT
+5 &lt; Pragma: no-cache
+5 &lt; Server: ESF
+5 &lt; Vary: [Origin, X-Origin, Referer]
+5 &lt; X-Content-Type-Options: nosniff
+5 &lt; X-Frame-Options: SAMEORIGIN
+5 &lt; X-XSS-Protection: 0</div>
+<div class="step-row">
+<div class="step-container" id="25">
+<div class="step-ref passed">25</div>
+<div class="step-cell passed">Then status 204</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

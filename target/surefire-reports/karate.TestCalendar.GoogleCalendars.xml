@@ -1,0 +1,12 @@
+<testsuite failures="1" name="karate/TestCalendar/GoogleCalendars.feature" skipped="0" tests="1" time="0.008213">
+  <testcase classname="karate.TestCalendar.GoogleCalendars" name="Create a calendar" time="0.008213">
+    <failure message="GoogleCalendars.feature:7 - null">Given url "https://www.googleapis.com/calendar/v3/calendars" .............. passed
+And header Authorization = "Bearer ya29.a0ARrdaM_YDp-gArpAh5at-LsKatQMBkqodbMPYrEKq47z8VkTycpEcdtA8iWZTa2nXBnBC6kte-DXdasGOfq7EJ4YcINpOULOwl7g7ofgz1jvbOVbfiMjAWNpTF8N4cT4NyyjaAJ9l3dWKzyWEwuG6LtGRYYI" . passed
+When request '{ “summary”:”Name of the Calendar” }' ....................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: GoogleCalendars.feature:7 - null
+	at ✽.Then status 200 (GoogleCalendars.feature:7)</failure>
+  </testcase>
+</testsuite>

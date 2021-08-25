@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>karate.TestScriptSamples.PostPet</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-08-18 11:47:27 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[1:4]">[1:4] Testing the post call for a new pet </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">karate/TestScriptSamples/PostPet.feature</span><span class="feature-description">Post a specific pet</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:4]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:4]</span><span class="scenario-name">Testing the post call for a new pet </span>
+</div>
+<div class="scenario-time failed">ms: 1767</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">Given url 'https://petstore.swagger.io/v2'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="1">11:47:24.470 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">And path 'pet'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">And request read('post-request.json')</div>
+</div>
+<div class="time-cell passed">84</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1666</div>
+</div>
+<div class="preformatted" data-parent="4">11:47:24.895 request:
+1 &gt; POST https://petstore.swagger.io/v2/pet
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 138
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_292)
+{"id":0,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+11:47:26.248 response time in milliseconds: 1350.84
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 18 Aug 2021 06:17:26 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+{"id":9223372036854775807,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref failed">6</div>
+<div class="step-cell failed">And match response == read('resp.json')</div>
+</div>
+<div class="time-cell failed">10</div>
+</div>
+<div class="preformatted" data-parent="6">11:47:26.259 assertion failed: path: $.id, actual: 9223372036854775807, expected: 9223372000666007679, reason: not equal (Long)
+PostPet.feature:10 - path: $.id, actual: 9223372036854775807, expected: 9223372000666007679, reason: not equal (Long)</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

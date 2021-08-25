@@ -1,0 +1,14 @@
+<testsuite failures="1" name="karate/TestScriptSamples/PostPet.feature" skipped="0" tests="1" time="1.766854">
+  <testcase classname="karate.TestScriptSamples.PostPet" name="Testing the post call for a new pet" time="1.766854">
+    <failure message="PostPet.feature:10 - path: $.id, actual: 9223372036854775807, expected: 9223372000666007679, reason: not equal (Long)">Given url 'https://petstore.swagger.io/v2' ................................ passed
+And path 'pet' ............................................................ passed
+And request read('post-request.json') ..................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And match response == read('resp.json') ................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: PostPet.feature:10 - path: $.id, actual: 9223372036854775807, expected: 9223372000666007679, reason: not equal (Long)
+	at ✽.And match response == read('resp.json') (PostPet.feature:10)</failure>
+  </testcase>
+</testsuite>

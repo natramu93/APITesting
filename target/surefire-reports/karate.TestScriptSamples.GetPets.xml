@@ -1,0 +1,9 @@
+<testsuite failures="0" name="karate/TestScriptSamples/GetPets.feature" skipped="0" tests="1" time="2.491987">
+  <testcase classname="karate.TestScriptSamples.GetPets" name="Testing the get call for Available pets" time="2.491987">
+    <system-out>Given url 'https://petstore.swagger.io/v2' ................................ passed
+And path 'pet/findByStatus' ............................................... passed
+And param status = 'available' ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

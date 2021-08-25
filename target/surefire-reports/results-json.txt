@@ -1,0 +1,1 @@
+{"features":1,"ignored":0,"efficiency":0.0015540015137180698,"failures":{"karate.TestCalendar.GoogleCalendars":"GoogleCalendars.feature:7 - null"},"totalTime":8.212898,"threads":5,"scenarios":1,"failed":1,"passed":0,"version":"0.9.6","elapsedTime":1057.0}
